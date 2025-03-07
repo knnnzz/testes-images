@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumente a qualdiade da sua imagem!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Aumente a qualidade da sua imagem!</h1>
+        <div id="question-container">
+            <p id="question"></p>
+            <img src="{{ url_for('static', filename='charizard.webp') }}" alt="Charizard" width="300">
+            <p></p>
+            <div id="answers"></div>
+        </div>
+        <div id="upload-container" style="display: none;">
+            <img src="{{ url_for('static', filename='pikachu.gif') }}" alt="Pikachu" width="200">
+            <form id="upload-form">
+                <input type="file" id="image-input" accept="image/*" required>
+                <button type="submit">Enviar imagem pro Squirtle</button>
+            </form>
+            <div id="loading" style="display: none;">
+                <p>Aguarde enquanto o Squirtle aprimora sua imagem...</p>
+                <img src="{{ url_for('static', filename='pokemon-loading.gif') }}" alt="Aguardando" width="150">
+            </div>
+            <div id="download-link" style="display: none;">
+                <p>Upscale completo! <a href="#" id="download-url" download="imagem-upscale.webp">Clique aqui para baixar a imagem</a></p>
+            </div>
+        </div>
+        <div id="pokemon-bravo" style="display: none;">
+            <img src="{{ url_for('static', filename='pokemon-bravo.gif') }}" alt="Pokémon Bravo" width="200">
+            <p>Você não é bem-vindo aqui!</p>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

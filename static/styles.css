@@ -1,0 +1,80 @@
+body {
+    background-color: #003049; /* Fundo escuro */
+    color: #e0e0e0; /* Texto em cinza claro */
+    font-family: 'Press Start 2P', system-ui; /* Usando a fonte "Press Start 2P" */
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #003049; /* Fundo do container */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #669bbc; /* Verde Pokémon */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#upload-form {
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a3a3a; /* Fundo do input */
+    color: #e0e0e0; /* Texto claro */
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #fdf0d5; /* Verde Pokémon */
+    color: #1b1b1b; /* Texto escuro */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Press Start 2P', system-ui; /* Aplicando a fonte aos botões */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #fdf0d5; /* Tom mais escuro de verde */
+}
+
+#loading {
+    display: none;
+    margin-top: 20px;
+}
+
+#download-link {
+    display: none;
+    margin-top: 20px;
+}
+
+#download-url {
+    color: #669bbc; /* Verde Pokémon */
+    text-decoration: underline;
+}
+
+#pokemon-bravo {
+    display: none;
+    margin-top: 20px;
+}
+
+#pokemon-bravo p {
+    color: #c1121f; /* Vermelho para mensagem de erro */
+    font-weight: bold;
+}
